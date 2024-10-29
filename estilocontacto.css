@@ -1,0 +1,401 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+  margin: 0%;
+}
+
+h1{ font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;
+padding: 0px 10px;}
+ul{list-style: none;}
+
+.button1{
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(0,0,0,0.5);
+  box-shadow: 2px 2px 10px rgb(0,0,0,0.5) ;
+  color: white;
+  background-color: rgb(17, 130, 179);
+  margin-top: 20px;
+}
+
+.button1:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  background-color: rgb(13, 85, 116);
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-size: 1.1em;
+}
+
+a {
+  display: inline;
+}
+
+a:hover{
+  color: rgb(120, 120, 120);
+}
+
+
+li {
+  list-style-type: none;
+}
+
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+
+.header{
+  width:100%;
+  background-color: #ffffff;
+  padding: 0.4em;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+  color:#282828;
+}
+
+.header nav{
+  padding: 0px 80px;
+}
+
+header .imgescu{
+  padding: 0px 50px;
+}
+
+.a1{
+  font-size: 2em;
+}
+
+.header .button{
+  display: none;
+  color: #282828;
+  background-color: white;
+  padding: 0px 50px;
+}
+.header .svg{
+  width:2.5em;
+  height:2.5em;
+  fill:#282828;
+}
+.header .ul{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+.header .li{
+  margin: 0 .8em;
+}
+.svg:hover{
+  color: rgb(255, 0, 0);
+}
+
+.imgescu{
+  margin:0px;
+  width: 100px;
+  height: 105px;
+}
+
+/* Contact Section */
+#contactos {
+padding: 50px 0;
+text-align: center;
+background-image: linear-gradient(
+      0deg,
+      rgb(0,0,0,0.7),
+      rgb(0,0,0,0.7)
+  )
+  ,url("fotoescu (2).jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+}
+
+h2 {
+font-size: 3.2rem;
+margin-bottom: 30px;
+color: white;
+}
+
+.contact-info {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-bottom: 20px;
+}
+
+.contact-item {
+width: 30%;
+min-width: 350px;
+min-height: 140px;
+background-color: #fff;
+border: 1px solid #ccc;
+padding: 20px;
+margin: 10px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item h3 {
+font-size: 1.2rem;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.contact-item img {
+margin-right: 10px;
+}
+
+.contact-item p {
+font-size: 1.2rem;
+margin-bottom: 10px;
+}
+
+.contact-info1 {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-bottom: 20px;
+}
+
+
+/* Social Media */
+
+.social-media a {
+margin: 0 10px;
+display: inline-block;
+transition: transform 0.3s ease-in-out;
+}
+
+.social-media img {
+width: 60px;
+height: 60px;
+}
+
+.social-media a:hover img {
+transform: scale(1.2);
+background: white;
+border-radius: 10px;
+}
+
+
+
+@media screen and (max-width:850px){
+
+  .header .button{
+    display: block;
+    cursor: pointer;
+    color: #282828;
+  }
+  .header .nav{
+    width:100%;
+    height:0;
+    pointer-events: none;
+    overflow: hidden;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .nav.activo{
+    height:50vh;
+    pointer-events: auto;
+  }
+  .header .ul{
+    flex-direction: column;
+  }
+  .header .li{
+    margin: 1rem 0;
+  }
+}
+
+
+
+#interclubes{
+color: white;
+  background-image: linear-gradient(
+      0deg,
+      rgb(0,0,0,0.7),
+      rgb(0,0,0,0.7)
+  )
+  ,url("escuela 451.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+text-align: center;
+}
+
+#interclubes h2{
+font-size: 3.5em;
+}
+
+#interclubes .container{
+padding: 30px 12px;
+}
+
+#interclubes h3{
+font-size: 1.5em;
+}
+
+#interclubes .clubes{
+padding: 25px 0px;
+margin: 0px;
+}
+
+
+
+
+
+
+.contact-item1 {
+width: 30%;
+min-width: 350px;
+background-color: #fff;
+border: 1px solid #ccc;
+padding: 20px;
+margin: 10px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item1 h3 {
+font-size: 1.2rem;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.contact-item1 img {
+margin-right: 10px;
+}
+
+.contact-item1 p {
+font-size: 1rem;
+margin-bottom: 10px;
+}
+
+
+
+
+
+.contact-info {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+margin-bottom: 0px;
+}
+
+
+
+
+
+footer {
+background-color: rgb(255, 255, 255);
+}
+
+footer .container{
+height:100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+footer p{
+margin: 0;
+color: rgb(80, 80, 80);
+padding: 12px;
+}
+footer .img3{
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+/* FIN DE VISTA DE CELULAR*/
+
+@media (min-width:990px){
+#interclubes .container{
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+#interclubes h3{
+font-size: 1.6em;
+}
+
+
+#interclubes .clubes1{
+display: flex;
+justify-content:space-evenly;
+text-align: center;
+align-items: center;
+padding :90px 0px ;                                                                                     ;
+}
+
+#interclubes .clubes{
+max-width: 300px;
+}
+
+.contact-info {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+flex-direction: row;
+margin-bottom: 20px;
+}
+
+
+.contact-item {
+width: 30%;
+min-width: 200px;
+min-height: 140px;
+background-color: #fff;
+border: 1px solid #ccc;
+padding: 20px;
+margin: 10px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+}

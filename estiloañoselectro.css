@@ -1,0 +1,404 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  margin: 0%;
+}
+
+h1{ font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em; padding: 0px 10px;}
+ul{list-style: none;}
+
+.button1{
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(0,0,0,0.5);
+  box-shadow: 2px 2px 10px rgb(0,0,0,0.5);
+  color: white;
+  background-color: rgb(17, 130, 179);
+  margin-top: 20px;
+}
+
+.button1:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  background-color: rgb(13, 85, 116);
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-size: 1.1em;
+}
+
+a {
+  display: inline;
+}
+
+a:hover{
+  color: rgb(120, 120, 120);
+}
+
+li {
+  list-style-type: none;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+.header{
+  width:100%;
+  background-color: #ffffff;
+  padding: 0.4em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  color:#282828;
+}
+
+.header nav{
+  padding: 0px 80px;
+}
+
+header .imgescu{
+  padding: 0px 50px;
+}
+
+.a1{
+  font-size: 2em;
+}
+
+.header .button{
+  display: none;
+  color: #282828;
+  background-color: white;
+  padding: 0px 50px;
+}
+
+.header .svg{
+  width:2.5em;
+  height:2.5em;
+  fill:#282828;
+}
+
+.header .ul{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header .li{
+  margin: 0 .8em;
+}
+
+.svg:hover{
+  color: rgb(255, 0, 0);
+}
+
+.imgescu{
+  margin:0px;
+  width: 100px;
+  height: 105px;
+}
+
+@media screen and (max-width:850px){
+
+  .header .button{
+      display: block;
+      cursor: pointer;
+      color: #282828;
+  }
+
+  .header .nav{
+      width:100%;
+      height:0;
+      pointer-events: none;
+      overflow: hidden;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .header .nav.activo{
+      height:50vh;
+      pointer-events: auto;
+  }
+
+  .header .ul{
+      flex-direction: column;
+  }
+
+  .header .li{
+      margin: 1rem 0;
+  }
+}
+
+#hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url("escuela 451.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+}
+
+#hero h1{
+  font-size: 4em;
+}
+
+#quienes-somos .container{
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#quienes-somos h2{
+  padding-bottom: 30px;
+}
+
+#quienes-somos p{
+  padding: 0px 10px;
+}
+
+#interclubes{
+  color: white;
+  background-color: rgb(30,30,30);
+  text-align: center;
+}
+
+#interclubes h2{
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#interclubes .container{
+  padding: 80px 12px;
+}
+
+#interclubes p{
+  padding: 0px 20px;
+}
+
+#interclubes .clubes{
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+  padding: 50px 0px;
+  margin: 40px;
+}
+
+.clubes:first-child{
+  background-image: linear-gradient(0deg, rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url("electro1.jpeg");
+}
+
+.clubes:nth-child(2){
+  background-image: linear-gradient(0deg, rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url("electro2.jpeg");
+}
+
+.clubes:nth-child(3){
+  background-image: linear-gradient(0deg, rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url("electro3.jpeg");
+}
+
+.clubes:nth-child(4){
+  background-image: linear-gradient(0deg, rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url("fotoescuela1.png");
+}
+
+.masfotos{
+  margin-top: 30px;
+}
+
+#expotecnica{
+  color: black;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#expotecnica h2{
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#expotecnica .talleres1{
+  justify-content: center;
+  padding: 50px 30px;
+}
+
+#expotecnica .container{
+  padding: 150px 12px;
+}
+
+#expotecnica .talleres{
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+  padding: 50px 10px;
+  margin: 20px;
+  color: white;
+}
+
+.talleres:first-child{
+  background-image: linear-gradient(0deg, rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url("carpinteroslogo.jpg");
+}
+
+.talleres:nth-child(2){
+  background-image: linear-gradient(0deg, rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url("electricistaslogo.jpg");
+}
+
+.talleres:nth-child(3){
+  background-image: linear-gradient(0deg, rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url("mecanicoslogo.jpg");
+}
+
+.talleres:nth-child(4){
+  background-image: linear-gradient(0deg, rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url("herreroslogo1.jpg");
+}
+
+.talleres:hover{
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+#inscribite{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(30,30,30);
+  color:rgb(255, 255, 255);
+  height: 80vh;
+}
+
+footer {
+  background-color: rgb(255, 255, 255);
+}
+
+footer .container{
+  height:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p{
+  margin: 0;
+  color: rgb(80, 80, 80);
+  padding: 12px;
+}
+
+footer .img3{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* FIN DE VISTA DE CELULAR*/
+
+@media (min-width:990px){
+
+  .header{
+      position: fixed;
+      width: 100%;
+      padding: 0.03em;
+  }
+
+  #hero{
+      height: 120vh;
+  }
+
+  #quienes-somos .container{
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  #quienes-somos h2{
+      padding: 30px 5px;
+  }
+
+  #quienes-somos .texto{
+      width: 50%;
+      text-align: initial;
+      padding: 0px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 600px;
+  }
+
+  #quienes-somos .img1{
+      background-image:url("fotoescuela1.png");
+      background-size: cover;
+      background-position: center center;
+      height: 400px;
+      width: 500px;
+  }
+
+  #interclubes h2{
+      padding-bottom: 20px;
+  }
+
+  #interclubes h3{
+      font-size: 30px;
+  }
+
+  #interclubes .container{
+      padding: 160px 12px;
+  }
+
+  #interclubes .clubes1{
+      display: flex;
+      justify-content: space-evenly; 
+  }
+
+  #interclubes .clubes2{
+      display: flex;
+      justify-content: space-evenly; 
+  }
+
+  #interclubes p{
+      display: block;
+      margin-top:30px;
+  }
+
+  #interclubes .clubes{
+      height: 300px;
+      width: 300px;
+      align-content: center;
+  }
+
+  #expotecnica .talleres1{
+      display: flex;
+      justify-content: center;
+  }
+
+  #expotecnica .talleres{
+      padding: 60px 30px;
+  }
+}
